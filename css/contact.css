@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    --primary-color: #665fa7;
+    --primary-hover: #857cb9;
+    --text-color: #fff;
+    --background: #18181b;
+    --form-control: #495057;
+    --border-form: #ced4da;
+    --button-submit: #11D499;
+}
+
+body {
+    background-color: var(--background);
+    color: var(--primary-color);
+    font-family: 'Inter', sans-serif;
+}
+
+.container-form {
+    /*border: 4px solid red;*/
+    width: 500px;
+    margin: 60px auto;
+    text-align: center;
+}
+
+h1 {
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 39px;
+    margin-bottom: 7px;
+}
+
+p {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: var(--primary-hover);
+}
+
+form {
+    margin: 20px;
+    margin-right: 40px;
+    color: var(--text-color);
+    max-width: 500px;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+/*.required-atribute {
+    color: red;
+}*/
+input, textarea {
+    padding: 10px;
+    color: var(--form-control);
+    border: 1px solid var(--border-form);
+    border-radius: .25rem;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+input:hover, textarea:hover {
+    border-color: var(--primary-hover);
+    /*box-shadow: 5px 5px 5px 5px var(--primary-hover);*/
+}
+input:focus, textarea:focus {
+    outline: 0;
+    border-color: var(--primary-color);
+    background-color: #e8ecf3;
+    box-shadow: none;
+}
+
+.submit {
+    background-color: var(--button-submit);
+    color: var(--text-color);
+    border-color: var(--button-submit);
+}
+.submit:hover {
+    background: rgba(75, 71, 71, 0.137);
+}
+
